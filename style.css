@@ -1,0 +1,170 @@
+.btn1 {
+  width: 30%;
+    height: 3em;
+    border-radius: 30px;
+    background-color: #ffc0cb;
+    color: #fff;
+    border: none;
+    margin-top: 2em;
+    cursor: pointer;
+}
+.btn1:hover {
+  background-color: #ffb6c1;
+}
+#box {
+  margin-top: 2em;
+}
+* {
+  margin: 2px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat,Helvetica Neue,Arial,sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #ffc0cb;
+    width: 60vw;
+    height: 200vh;
+    border-radius: 20px;
+    margin-top: 1em;
+}
+.apply {
+  text-align: center;
+  margin-top: 1em;
+  color: #00a9f8;
+  text-shadow: 1px 1px #767676;
+  position: relative;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 25em;
+  height: 8em;
+}
+
+.personal {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 30px;
+  color: #00a9f8;
+}
+
+.input-div {
+  display: block;
+  text-align: center;
+}
+
+input {
+  border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-color: #e3e3e3;
+    background: none;
+    width: 90%;
+    height: 2em;
+    margin-top: 3em;
+}
+input:focus {
+  outline: none;
+  border-color: #00a9f8;
+}
+
+textarea {
+  width: 90%;
+  margin-top: 2em;
+  background: none;
+}
+textarea:focus {
+  outline: none;
+  border-color: #00a9f8;
+}
+
+.work-experience {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 30px;
+  color: #00a9f8;
+  cursor: pointer;
+}
+
+.years-div {
+  display: flex;
+  justify-content: left;
+  margin: 2.5em;
+  cursor: pointer;
+}
+.years {
+  font-size: 20px;
+  color: #767676;
+}
+select {
+  color: #767676;
+  outline: none;
+  margin-left: 1em;
+}
+
+.btn-2 {
+  width: 8em;
+    height: 3em;
+    border-radius: 30px;
+    background-color: #00a9f8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.btn-2:hover {
+  background-color: #1e90ff;
+}
+
+.btn-div {
+  display: block;
+  text-align: center;
+}
+
+.terms {
+  text-align: center;
+  margin-top: 1em;
+}
+
+@media (min-width: 425px) {
+  .logo {
+    width: 15em;
+    height: 5em;
+  }
+  form {
+    height: 220vh;
+  }
+  .apply {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .logo {
+    width: 12em;
+    height: 3em;
+  }
+  form {
+    height: 220vh;
+  }
+}
+
+@media (min-width: 320px) {
+  .logo {
+    width: 8em;
+    height: 2em;
+  }
+  form {
+    width: 70vw;
+    height: 230vh;
+  }
+}

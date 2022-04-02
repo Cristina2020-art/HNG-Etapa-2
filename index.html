@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG Etapa 2</title>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+      <center>
+    <button onClick="printName()" class="btn1">Faceți clic aici pentru a obține numele meu</button>
+    <div id="box">
+    </div>
+  </center>
+  <br><br>
+    <h1 class="apply">Aplicați aici pentru a vă alătura echipei noastre</h1>
+    <section>
+    <form>
+        <div class="logo-div">
+        <img src="./images/brand-logo.png" class="logo">
+    </div>
+        <h3 class="personal">Detalii personale</h3>
+        <div class="input-div">
+    <input type="text" name="Full Name" placeholder="Numele complet">
+    <input type="text" name="Address" placeholder="Adresa">
+    <input type="number" name="Phone Number" placeholder="Numar de telefon">
+    <input type="text" name="Email" placeholder="Email">
+    <textarea name="About You" rows="3" cols="30" placeholder="Despre tine"></textarea>
+    <textarea name="Career Objectives" rows="3" cols="30" placeholder="Obiective de cariera"></textarea>
+    <textarea name="Education" rows="3" cols="30" placeholder="Educatie"></textarea>
+</div>
+
+<div class="input-div">
+  <h3 class="work-experience">Experienta de lucru</h3>
+  <textarea name="Past Jobs" rows="3" cols="30" placeholder="Jobul anterior"></textarea>
+  <div class="years-div">
+  <p class="years">Ani de experienta:</p>
+  <select class="" name="Ani de experienta">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+    <option value="">5</option>
+    <option value="">mai multe</option>
+
+  </select>
+</div>
+</div>
+
+<div class="btn-div">
+<button type="button" name="button" class="btn-2">Trimiteți informații</button>
+</div>
+
+</form>
+</section>
+
+    <p class="terms"><span>Termeni & Conditii </span> <span>| Contactati-ne</span> </p>
+
+    <script>
+    function printName(){
+      const box = document.getElementById("box");
+      let name = document.createElement('h2');
+      name.id = "myname"
+      name.textContent = "Buna,numele meu este Cristina";
+      if (document.getElementById("myname")){
+        console.log("Ți-ai imprimat deja numele");
+      }else{
+        box.appendChild(name);
+      }
+    }
+    </script>
+</body>
+</html>
